@@ -1,3 +1,3 @@
 <?php
-  echo "こんにちは"
+  echo "こんにちは".PHP_EOL ;
 ?>
