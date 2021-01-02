@@ -2,10 +2,9 @@
 
   $name = 'toyama'; 
   /*
-  ダブルクオーテーションの中でダブルクオーテーションを使用する場合
-  バックスラッシュ(option + ¥)を前に記述する
+  バックスラッシュを使用した特殊文字の表現
   */
 
-  echo "It's \"Sundy Hello $name " .PHP_EOL ;
+  echo "It's \t Sundy Hello $name " .PHP_EOL ; //\tで　タブを挿入
 
 ?>
