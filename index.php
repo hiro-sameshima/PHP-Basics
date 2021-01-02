@@ -2,11 +2,10 @@
 
   $name = 'toyama'; 
   /*
-  変数の埋め込み
-  ダブルクオーテーションを使用した際は変数を埋め込める
+  ダブルクオーテーションの中でダブルクオーテーションを使用する場合
+  バックスラッシュ(option + ¥)を前に記述する
   */
-  
-  echo "It's Sundy Hello $name " .PHP_EOL ;
 
+  echo "It's \"Sundy Hello $name " .PHP_EOL ;
 
 ?>
