@@ -1,9 +1,8 @@
 <?php
 
   $name = 'toyama'; 
-  $Name = 'mimamsa';//大文字を区別する
-
-  echo $name.PHP_EOL ;
-  echo $Name.PHP_EOL ;
+  //文字列シングルクォーテーションを使用した際の文字列の連結
+  //ダブルクオーテーションを使用する
+  echo "It's Sundy Hello" . $name.PHP_EOL ;
 
 ?>
