@@ -3,7 +3,7 @@ $name = 'taguchi';
 
 // $text = <<<'EOT' // nowdoc
 // $text = <<<"EOT" // heredoc
-  $text = <<<'EOT'
+  $text = <<<"EOT"
   hello! $name
     this is looooong
   text!
