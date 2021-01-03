@@ -1,11 +1,13 @@
 <?php
 //ifで条件分岐をする
-//elseを使ったfalseの処理も書ける
+//elseifを使って条件を追加する
 
 $score = 70;
 
 if ($score >= 80) {
   echo "good".PHP_EOL;
+} elseif ($score >= 60) {
+  echo "oh...".PHP_EOL;
 } else {
-  echo "oh my god";
+  echo "oh my god".PHP_EOL;
 }
