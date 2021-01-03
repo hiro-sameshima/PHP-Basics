@@ -1,16 +1,15 @@
 <?php
-//変数を使った計算
+//定数を使う
 
-$price = 500;
+//定数は再代入できない
 
-//1引く、１足すは簡略して書ける
+define('NAME', 'aaa');
+define('NAME', 'bbb'); //aaa
 
-//1足す
-//  $price ++;
+echo NAME.PHP_EOL;
 
- echo $price ;
- //1引く
+const HOGE = 'rrr';
+const HOGE = 'fff';
+echo HOGE . PHP_EOL; //rrr
 
- $price --;
-
-echo $price ;
+?>
