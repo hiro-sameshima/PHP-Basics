@@ -11,4 +11,5 @@ echo NAME.PHP_EOL;
 const HOGE = 'rrr';
 const HOGE = 'fff';
 echo HOGE . PHP_EOL; //rrr
+
 ?>
