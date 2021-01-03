@@ -1,15 +1,12 @@
 <?php
-//定数を使う
+//データ型の種類
 
-//定数は再代入できない
-
-define('NAME', 'aaa');
-define('NAME', 'bbb'); //aaa
-
-echo NAME.PHP_EOL;
-
-const HOGE = 'rrr';
-const HOGE = 'fff';
-echo HOGE . PHP_EOL; //rrr
-
-?>
+/*
+文字列(string)      'hello' "world"
+整数（int）          5  -20
+浮動小数点数(float)  3.2 -1.8
+    null　         null
+真偽値(bool)        true false
+配列(array)        [ 5 , 3 , 8 ]
+オブジェクト(object)  new Object()
+*/
