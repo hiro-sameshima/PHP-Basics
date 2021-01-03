@@ -1,9 +1,9 @@
 <?php
 //定数を使う
 
-//defineを使った定数宣言
+//constを使った定数宣言
 
-define('NAME', 'aaa');
+const NAME = 'aaa';
 
 echo NAME;
 ?>
