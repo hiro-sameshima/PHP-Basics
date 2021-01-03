@@ -1,12 +1,27 @@
 <?php
-//データ型の種類
+//変数の型を調べる
+
+$a =  'hello';
+$b =  10;
+$c =  1.3;
+$d =  null;
+$e = true;
+
+//変数の型を調べる
+var_dump($a);
+var_dump($b);
+var_dump($c);
+var_dump($d);
+var_dump($e);
+var_dump($f);
+
 
 /*
-文字列(string)      'hello' "world"
-整数（int）          5  -20
-浮動小数点数(float)  3.2 -1.8
-    null　         null
-真偽値(bool)        true false
-配列(array)        [ 5 , 3 , 8 ]
-オブジェクト(object)  new Object()
+var_dump()で表示される型
+string(5) "hello"
+int(10)
+float(1.3)
+NULL
+bool(true)
+NULL
 */
