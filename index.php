@@ -1,9 +1,11 @@
 <?php
 //ifで条件分岐をする
-//ifの終わりは ; は付けない。
+//elseを使ったfalseの処理も書ける
 
-$score = 85;
+$score = 70;
 
 if ($score >= 80) {
   echo "good".PHP_EOL;
+} else {
+  echo "oh my god";
 }
