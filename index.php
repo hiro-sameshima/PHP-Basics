@@ -1,9 +1,14 @@
 <?php
 //定数を使う
 
-//constを使った定数宣言
+//定数は再代入できない
 
-const NAME = 'aaa';
+define('NAME', 'aaa');
+define('NAME', 'bbb'); //aaa
 
-echo NAME;
+echo NAME.PHP_EOL;
+
+const HOGE = 'rrr';
+const HOGE = 'fff';
+echo HOGE . PHP_EOL; //rrr
 ?>
