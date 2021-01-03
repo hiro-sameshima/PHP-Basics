@@ -3,8 +3,14 @@
 
 $price = 500;
 
-//echo $price = $price + 100 . PHP_EOL;
+//1引く、１足すは簡略して書ける
 
-//よく使う記述は簡略できる
+//1足す
+//  $price ++;
 
-echo $price += 100 . PHP_EOL;
+ echo $price ;
+ //1引く
+
+ $price --;
+
+echo $price ;
