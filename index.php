@@ -1,10 +1,13 @@
 <?php
+$name = 'taguchi';
 
-// comment単語
-# comment行末まで
-/*
-comment複数行
-*/
-  echo "こんにちは".PHP_EOL ;
-  //echo "こんばんは".PHP_EOL ;
-?>
+// $text = <<<'EOT' // nowdoc
+// $text = <<<"EOT" // heredoc
+  $text = <<<'EOT'
+  hello! $name
+    this is looooong
+  text!
+  
+  EOT;
+
+echo $text;
