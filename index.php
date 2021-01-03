@@ -9,8 +9,8 @@
 */
 $name = sameshima;
 
-$text = <<<'EOT'
-  Hello!! $same
+$text = <<<EOT
+  Hello!! $name
       Oh My Got...
 EOT;
 
