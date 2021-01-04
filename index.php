@@ -1,42 +1,36 @@
 <?php
-//比較演算子と真偽値
+//論理演算子を使ってみる
 /*
-比較演算子
-
-  >= ~以上
-  <= ~以下
-  > ~より大きい
-  < ~より小さい
-  === ~と等しい
-  !== ~と等しくない
-
+  $scoreが60点で、名前がtaguchiというデータを探す場合。
 */
 
-$score = 80;
+$score = 60;
+$name = 'tag';
 
-if ($score > 80) {
-  echo ">=は以上だから、同じ数字も含まれるんやで".PHP_EOL;
-}else{
-  echo ">は〇〇より大きいだから、同じ数字は含まれないんやで".PHP_EOL;
+if($score >= 50) {
+  if($name === 'taguchi') {
+    echo 'good job'.PHP_EOL;
+  } else {
+    echo 'bad'.PHP_EOL;
+  }
+} 
+
+//論理演算子  なおかつ(&&)
+
+if($score >= 50 && $name === 'tag') {
+  echo "great".PHP_EOL;
 }
 
-//単一の値が評価される条件
+//論理演算子 もしくは(||)
 
-//変数がこんなとき、falseが返ってしまう
-
-  /*
-    false
-    ±0 , ±0.0
-    '0'
-    ''
-    null
-    []
-  */
-
-$x = 0;
-
-if($x) {
-  echo "上記以外だからtrueになるんやで";
+if($score >= 70 || $name === 'aaa') {
+  echo "great!!!";
 } else {
-  echo "falseやで";
+  echo "non";
+}
+
+//論理演算子　〜ではない(!)
+
+if (!$x) {
+  // $x の評価が true **ではない** 場合に実行される部分
 }
