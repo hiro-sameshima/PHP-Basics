@@ -14,3 +14,9 @@ if($score >= 50) {
     echo 'bad'.PHP_EOL;
   }
 } 
+
+//論理演算子  なおかつ(&&)
+
+if($score >= 50 && $name === 'tag') {
+  echo "great".PHP_EOL;
+}
