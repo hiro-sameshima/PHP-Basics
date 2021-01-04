@@ -20,3 +20,11 @@ if($score >= 50) {
 if($score >= 50 && $name === 'tag') {
   echo "great".PHP_EOL;
 }
+
+//論理演算子 もしくは(||)
+
+if($score >= 70 || $name === 'aaa') {
+  echo "great!!!";
+} else {
+  echo "non";
+}
