@@ -5,7 +5,7 @@
 $signal = 'blue';
 
 //switchを使った条件分岐
-//条件の追加はcaseを追記するだけ(&＆や||などの論理演算子のような表現)
+//条件にそぐわなかった際の処理は、defaultを使って記述できる
 
 switch ($signal) {
   case 'red';
@@ -14,11 +14,11 @@ switch ($signal) {
   case 'yellow';
     echo 'cation!' .PHP_EOL;
     break;
-  case 'red'; //条件を追加しており、言語化すると「redまたはyellowのときtrue」
+  case 'red';
   case 'yellow';
     echo 'go!' .PHP_EOL;
   break;
-  default:
+ default://条件にそぐわなかった際の処理をdefaultで記述する。
     echo "故障のようだ".PHP_EOL;
     break;
 }
