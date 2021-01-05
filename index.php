@@ -5,7 +5,7 @@
 $signal = 'blue';
 
 //switchを使った条件分岐
-//条件にそぐわなかった際の処理は、defaultを使って記述できる
+//breakを書き忘れると最後まで処理が進んでしまう
 
 switch ($signal) {
   case 'red';
@@ -18,7 +18,7 @@ switch ($signal) {
   case 'yellow';
     echo 'go!' .PHP_EOL;
   break;
- default://条件にそぐわなかった際の処理をdefaultで記述する。
+ default:
     echo "故障のようだ".PHP_EOL;
     break;
 }
