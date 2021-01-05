@@ -1,18 +1,11 @@
 <?php
-//switchで条件分岐をする
+//switchを使いこなしている
 //まずは普通のif文での条件分岐
 
-$signal = 'red';
-
-if($signal === 'red') {
-  echo 'stop!' . PHP_EOL;
-} elseif ($signal === 'yellow') {
-  echo 'cation!' . PHP_EOL;
-} elseif ($signal === 'blue') {
-  echo 'go!' .PHP_EOL;
-}
+$signal = 'blue';
 
 //switchを使った条件分岐
+//breakを書き忘れると最後まで処理が進んでしまう
 
 switch ($signal) {
   case 'red';
@@ -21,10 +14,11 @@ switch ($signal) {
   case 'yellow';
     echo 'cation!' .PHP_EOL;
     break;
-  case 'blue';
+  case 'red';
+  case 'yellow';
     echo 'go!' .PHP_EOL;
   break;
-  default:
+ default:
     echo "故障のようだ".PHP_EOL;
     break;
 }
