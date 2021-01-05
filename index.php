@@ -1,36 +1,30 @@
 <?php
-//論理演算子を使ってみる
-/*
-  $scoreが60点で、名前がtaguchiというデータを探す場合。
-*/
+//switchで条件分岐をする
+//まずは普通のif文での条件分岐
 
-$score = 60;
-$name = 'tag';
+$signal = 'red';
 
-if($score >= 50) {
-  if($name === 'taguchi') {
-    echo 'good job'.PHP_EOL;
-  } else {
-    echo 'bad'.PHP_EOL;
-  }
-} 
-
-//論理演算子  なおかつ(&&)
-
-if($score >= 50 && $name === 'tag') {
-  echo "great".PHP_EOL;
+if($signal === 'red') {
+  echo 'stop!' . PHP_EOL;
+} elseif ($signal === 'yellow') {
+  echo 'cation!' . PHP_EOL;
+} elseif ($signal === 'blue') {
+  echo 'go!' .PHP_EOL;
 }
 
-//論理演算子 もしくは(||)
+//switchを使った条件分岐
 
-if($score >= 70 || $name === 'aaa') {
-  echo "great!!!";
-} else {
-  echo "non";
-}
-
-//論理演算子　〜ではない(!)
-
-if (!$x) {
-  // $x の評価が true **ではない** 場合に実行される部分
+switch ($signal) {
+  case 'red';
+    echo 'stop!' .PHP_EOL;
+    break;
+  case 'yellow';
+    echo 'cation!' .PHP_EOL;
+    break;
+  case 'blue';
+    echo 'go!' .PHP_EOL;
+  break;
+  default:
+    echo "故障のようだ".PHP_EOL;
+    break;
 }
