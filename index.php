@@ -1,15 +1,9 @@
 <?php
-//forを使ったループ処理をしよう
+//do Whileを使ったループ処理
+//条件に関係なく一度は処理をする
+$hp = -50;
 
-for ($i = 1; $i <= 5; $i++) {
-  echo "$i  - 'hello'" .PHP_EOL;  //$iの今の値を表示させる際、$iも記述する
-}
-
-/*
-1  - 'hello'
-2  - 'hello'
-3  - 'hello'
-4  - 'hello'
-5  - 'hello'
-と表示される
-*/
+do {
+  echo "Your HP: $hp". PHP_EOL;
+  $hp -= 15;
+} while($hp > 0);
