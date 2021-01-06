@@ -2,7 +2,10 @@
 //continue,breakを使った式
 // 特定の処理をスキップする
 
-//1〜10まで表示するfor文
+//continueを使い、4の数字だけスキップする
 for ($i = 1; $i <= 10; $i++) {
+  if($i === 4) {
+    continue;
+  }
   echo $i .PHP_EOL;
 }
