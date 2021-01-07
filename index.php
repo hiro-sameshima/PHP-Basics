@@ -1,11 +1,21 @@
 <?php
-//continue,breakを使った式
-// 特定の処理をスキップする
+//関数で処理をまとめてみよう
+//広告を関数化する
 
-//breakを使い、ある条件を満たした時、処理を終了させる
-for ($i = 1; $i <= 10; $i++) {//最初の3の倍数で条件を満たしたため、残りの処理は行われない
-  if($i % 3 === 0) {
-  break;
-  }
-  echo $i .PHP_EOL;
+function showAd() {
+
+  echo '----------------'.PHP_EOL;
+  echo "-------Add------".PHP_EOL;
+  echo '----------------'.PHP_EOL;
+
 }
+
+
+echo showAd();
+echo 'Tom is great!!' .PHP_EOL;
+echo showAd();
+echo 'Bob is great!!' .PHP_EOL;
+echo showAd();
+echo 'Steve is great!!' .PHP_EOL;
+echo showAd();
+echo 'Bob is great!!' .PHP_EOL;
