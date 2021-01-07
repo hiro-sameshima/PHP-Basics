@@ -1,21 +1,23 @@
 <?php
 //関数で処理をまとめてみよう
-//広告を関数化する
+//引数を使う
+//引数を渡さなかった時のデフォルト値を設定できる
 
-function showAd() {
+function showAd($message = 'Ad') {//〇〇 = 'Ad'とすることでデフォルト値を設定できる
 
   echo '----------------'.PHP_EOL;
-  echo "-------Add------".PHP_EOL;
+  echo '-------'.$message.'------'.PHP_EOL;
   echo '----------------'.PHP_EOL;
 
 }
 
 
-echo showAd();
+echo showAd('あああ');
 echo 'Tom is great!!' .PHP_EOL;
-echo showAd();
+echo showAd('いいい');
 echo 'Bob is great!!' .PHP_EOL;
-echo showAd();
+echo showAd('ううう');
 echo 'Steve is great!!' .PHP_EOL;
-echo showAd();
-echo 'Bob is great!!' .PHP_EOL;
+echo showAd();// 引数を渡さなかった
+echo 'Bob is great!!'
+ .PHP_EOL;
