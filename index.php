@@ -1,23 +1,13 @@
 <?php
-//関数で処理をまとめてみよう
-//引数を使う
-//引数を渡さなかった時のデフォルト値を設定できる
+//returnを使って処理を返す
+//３つの引数の合計を表示する関数を作成
+//returnで返すと、それ以降の処理は行われない
 
-function showAd($message = 'Ad') {//〇〇 = 'Ad'とすることでデフォルト値を設定できる
-
-  echo '----------------'.PHP_EOL;
-  echo '-------'.$message.'------'.PHP_EOL;
-  echo '----------------'.PHP_EOL;
-
+function sum($a, $b, $c)
+{
+  return $a + $b  + $c .PHP_EOL;
+  echo "こんにちは" . PHP_EOL;//returnで返っているため、それ以降の処理は行われない
 }
 
 
-echo showAd('あああ');
-echo 'Tom is great!!' .PHP_EOL;
-echo showAd('いいい');
-echo 'Bob is great!!' .PHP_EOL;
-echo showAd('ううう');
-echo 'Steve is great!!' .PHP_EOL;
-echo showAd();// 引数を渡さなかった
-echo 'Bob is great!!'
- .PHP_EOL;
+echo sum(100,200,300,) + sum(400,500,600,)   .  PHP_EOL;
