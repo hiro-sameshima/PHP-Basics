@@ -4,7 +4,7 @@
 
 function sum($a, $b, $c)
 {
-  return $a + $b  + $c .PHP_EOL;
+   $a + $b  + $c .PHP_EOL;
 }
 
 
