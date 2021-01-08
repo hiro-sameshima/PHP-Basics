@@ -1,10 +1,12 @@
 <?php
 //returnを使って処理を返す
 //３つの引数の合計を表示する関数を作成
+//returnで返すと、それ以降の処理は行われない
 
 function sum($a, $b, $c)
 {
-   $a + $b  + $c .PHP_EOL;
+  return $a + $b  + $c .PHP_EOL;
+  echo "こんにちは" . PHP_EOL;//returnで返っているため、それ以降の処理は行われない
 }
 
 
