@@ -4,9 +4,8 @@
 
 function sum($a, $b, $c)
 {
-  echo $a + $b  + $c .PHP_EOL;
+  return $a + $b  + $c .PHP_EOL;
 }
 
 
-sum(100,200,300,);
-sum(400,500,600,);
+echo sum(100,200,300,) + sum(400,500,600,)   .  PHP_EOL;
