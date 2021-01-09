@@ -15,6 +15,7 @@ function sum($a, $b, $c)
 echo sum(100,200,300,) + sum(400,500,600,)   .  PHP_EOL;
 
 
+<<<<<<< Updated upstream
 /*
 まとめ
 
@@ -23,3 +24,5 @@ echo sum(100,200,300,) + sum(400,500,600,)   .  PHP_EOL;
 スコープ（変数の有効範囲）が違うため、同じ変数名であっても宣言できる。
 
 */
+=======
+>>>>>>> Stashed changes
