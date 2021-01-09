@@ -1,10 +1,12 @@
 <?php
 //変数のスコープを理解する
 
+$rate = 1.1;//消費税の変数
+
 function sum($a, $b, $c)
 {
-  return $a + $b  + $c .PHP_EOL;
-  echo "こんにちは" . PHP_EOL;
+  global $rate; //関数の外で宣言したスコープを関数内で有効にするため、globalを用いる
+  return ($a + $b  + $c) * $rate;//sum関数に対して、$rateを掛ける
 }
 
 
