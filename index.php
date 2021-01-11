@@ -10,17 +10,19 @@
 
 //条件演算子を使う 
 //下記の関数を改造し、合計値がマイナスだった場合、０を返すよう記述する  
+//条件部分を簡潔に書ける
 
 function sum($a, $b, $c){ 
   $total =  ($a + $b  + $c);
   // echo $total .PHP_EOL;
 
-  if ($total < 0) {
-    return 0;
-  } else {
-    return $total;
-  }
+  // if ($total < 0) {
+  //   return 0;
+  // } else {
+  //   return $total;
+  // }
 
+ return $total < 0 ? 0  :  $total;//条件演算子   条件　?  trueの処理  : falseの処理 ;
 };
 echo sum(100,200,300) .PHP_EOL;
 echo sum(-100,-200,-300) .PHP_EOL;
