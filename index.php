@@ -8,28 +8,25 @@
 
 */
 
-//無名関数はセミコロンが必要
-//そのため｛｝の改行位置を関数宣言とは変えたほうが、無名関数なのか関数宣言なのか、他社はわかりやすい
+//条件演算子を使う 
+//下記の関数を改造し、合計値がマイナスだった場合、０を返すよう記述する  
+//条件部分を簡潔に書ける
 
+function sum($a, $b, $c){ 
+  $total =  ($a + $b  + $c);
+  // echo $total .PHP_EOL;
 
-$sum = function ($a, $b, $c){ //無名関数。変数sumに処理結果を代入している
-  return ($a + $b  + $c);
+  // if ($total < 0) {
+  //   return 0;
+  // } else {
+  //   return $total;
+  // }
+
+ return $total < 0 ? 0  :  $total;//条件演算子   条件　?  trueの処理  : falseの処理 ;
 };
-
-echo $sum(100,300,500).PHP_EOL;  //$sumで結果を使えるし、引数で値を渡せる
-
+echo sum(100,200,300) .PHP_EOL;
+echo sum(-100,-200,-300) .PHP_EOL;
 /*
-関数宣言
- function sum()
-  {
-    return ($a + $b  + $c);
-  }
-*/
 
-/*
-無名関数
- $sum = function ($a, $b, $c) {
-    return ($a + $b  + $c);
-  }; ※セミコロンが必要
 */
 
