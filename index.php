@@ -1,32 +1,24 @@
 <?php
-//無名関数を使ってみる
-//無名関数とは、処理の結果を値に代入した形（変数名に代入されているため、関数自体には名前はない）
-//つまり、前々回のreturnの例で考えると↓
+//引数の型を指定する
+//declare(strict_type)を使用した強い型付け
+
+declare(strict_types = 1);//こちらを宣言することで厳密な型をチェックしてくれる
+
+function showInfo(string $name , int $score):void {
+
+  echo $name . ':' . $score . PHP_EOL;
+}
+
+// showInfo('tanaka',100);
+
+showInfo('tanaka' , '4'); //文字列の4を渡した場合、PHPが数値の4に変換してしまう
+
 /*
-前々回→returnで関数の処理結果を関数の呼び出し箇所に持ってこれる
-今回 →→処理結果は$sumという新しい名前の変数としてもつため、助長しないため、変数名をわかり易い名前さえつければ可読性が上がりそう
+厳密な型付けを行ったことで、下記のような引数エラーが発生した
 
+  atal error: Uncaught TypeError: Argument 2 passed to showInfo() must be of the type int, string given, called in /Users/sameshima/projects/php.training/PHP-Basics/index.php on line 14 and defined in /Users/sameshima/projects/php.training/PHP-Basics/index.php:7
+Stack trace:
+#0 /Users/sameshima/projects/php.training/PHP-Basics/index.php(14): showInfo('tanaka', '4')
+#1 {main}
+  thrown in /Users/sameshima/projects/php.training/PHP-Basics/index.php on line 7
 */
-
-//条件演算子を使う 
-//下記の関数を改造し、合計値がマイナスだった場合、０を返すよう記述する  
-//条件部分を簡潔に書ける
-
-function sum($a, $b, $c){ 
-  $total =  ($a + $b  + $c);
-  // echo $total .PHP_EOL;
-
-  // if ($total < 0) {
-  //   return 0;
-  // } else {
-  //   return $total;
-  // }
-
- return $total < 0 ? 0  :  $total;//条件演算子   条件　?  trueの処理  : falseの処理 ;
-};
-echo sum(100,200,300) .PHP_EOL;
-echo sum(-100,-200,-300) .PHP_EOL;
-/*
-
-*/
-
