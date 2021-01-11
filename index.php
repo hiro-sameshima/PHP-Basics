@@ -8,5 +8,5 @@ function showInfo(string $name , int $score):void {
 
 // showInfo('tanaka',100);
 
-//誤って関係ない文字列を渡してしまった場合
-showInfo('tanaka' , 'doitnow'); //普通にtanaka:doitnowを表示される
+//型付けは弱い。
+showInfo('tanaka' , '4'); //文字列の4を渡した場合、PHPが数値の4に変換してしまう
