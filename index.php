@@ -3,7 +3,7 @@
 
 declare(strict_types = 1);
 
-function getAward(?int $score) {
+function getAward(?int $score): ?string {
  return $score >= 80 ? "Gold" : null;
 
 }
