@@ -11,10 +11,19 @@
 //条件演算子を使う 
 //下記の関数を改造し、合計値がマイナスだった場合、０を返すよう記述する  
 
-$sum = function ($a, $b, $c){ //無名関数。変数sumに処理結果を代入している
-  return ($a + $b  + $c);
-};
+function sum($a, $b, $c){ 
+  $total =  ($a + $b  + $c);
+  // echo $total .PHP_EOL;
 
+  if ($total < 0) {
+    return 0;
+  } else {
+    return $total;
+  }
+
+};
+echo sum(100,200,300) .PHP_EOL;
+echo sum(-100,-200,-300) .PHP_EOL;
 /*
 
 */
