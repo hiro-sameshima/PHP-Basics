@@ -1,7 +1,7 @@
 <?php
 //引数の型を指定する
 
-function showInfo($name , $score) {
+function showInfo(string $name , int $score) {
 
   echo $name . ':' . $score . PHP_EOL;
 }
