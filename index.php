@@ -7,7 +7,7 @@ $scores = [
   50,
 ];
 
-var_dump($scores);//var_dumpでの表示例
+var_dump($scores);//print_r($scores);
 
 /*
 array(3) {
