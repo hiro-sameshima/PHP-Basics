@@ -1,18 +1,21 @@
 <?php
-//配列のキーを指定しよう
+//foreachで配列を操作する
+//キーもforeachで取得する
 
-//キーで配列の値を取得する
 $scores = [
   'first'   =>  90,
   'second ' =>  80,
   'third'   =>  50,
 ];
 
-
-echo $scores['third'] . PHP_EOL;
+foreach($scores as $key => $score) {
+  echo $key . ' - ' . $score . PHP_EOL;
+};
 
 /*
 
-50
+first - 90
+second  - 80
+third - 50
 
 */
