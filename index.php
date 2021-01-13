@@ -1,5 +1,6 @@
 <?php
 //foreachで配列を操作する
+//キーもforeachで取得する
 
 $scores = [
   'first'   =>  90,
@@ -7,14 +8,14 @@ $scores = [
   'third'   =>  50,
 ];
 
-foreach($scores as $score) {
-  echo $score . PHP_EOL;
+foreach($scores as $key => $score) {
+  echo $key . ' - ' . $score . PHP_EOL;
 };
 
 /*
 
-90
-80
-50
+first - 90
+second  - 80
+third - 50
 
 */
