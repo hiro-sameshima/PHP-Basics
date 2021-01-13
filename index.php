@@ -7,9 +7,11 @@ $scores = [
   50,
 ];
 
-var_dump($scores);//print_r($scores);
+var_dump($scores);
+print_r($scores);
 
 /*
+
 array(3) {
   [0]=>
   int(90)
@@ -17,5 +19,12 @@ array(3) {
   int(80)
   [2]=>
   int(50)
+}
+Array
+(
+    [0] => 90
+    [1] => 80
+    [2] => 50
+)
 }
 */
