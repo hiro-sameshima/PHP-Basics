@@ -1,11 +1,18 @@
 <?php
-//nullを渡す
+//配列のキーを指定しよう
 
-declare(strict_types = 1);
+//キーで配列の値を取得する
+$scores = [
+  'first'   =>  90,
+  'second ' =>  80,
+  'third'   =>  50,
+];
 
-function getAward(?int $score): ?string {
- return $score >= 80 ? "Gold" : null;
 
-}
+echo $scores['third'] . PHP_EOL;
 
-echo getAward(110);
+/*
+
+50
+
+*/
