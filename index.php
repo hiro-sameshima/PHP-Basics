@@ -1,11 +1,13 @@
 <?php
 //配列のキーを指定しよう
 
+//キーで配列の値を取得する(配列キーの指定)
 $scores = [
-  90,
-  80,
-  50,
+  'first'   =>  90,
+  'second ' =>  80,
+  'third'   =>  50,
 ];
+
 
 var_dump($scores);
 print_r($scores);
@@ -13,18 +15,19 @@ print_r($scores);
 /*
 
 array(3) {
-  [0]=>
+  ["first"]=>
   int(90)
-  [1]=>
+  ["second "]=>
   int(80)
-  [2]=>
+  ["third"]=>
   int(50)
-}
-Array
+
+
+  Array
 (
-    [0] => 90
-    [1] => 80
-    [2] => 50
+    [first] => 90
+    [second ] => 80
+    [third] => 50
 )
-}
+
 */
