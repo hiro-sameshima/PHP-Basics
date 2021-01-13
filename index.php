@@ -7,10 +7,14 @@ $scores = [
   'third'   =>  50,
 ];
 
-
+foreach($scores as $score) {
+  echo $score . PHP_EOL;
+};
 
 /*
 
-
+90
+80
+50
 
 */
