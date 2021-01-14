@@ -1,21 +1,35 @@
 <?php
-//foreachで配列を操作する
-//キーもforeachで取得する
+//配列の中で配列を展開する
+//
 
-$scores = [
-  'first'   =>  90,
-  'second ' =>  80,
-  'third'   =>  50,
+$moreScores = [
+  99,
+  77
 ];
 
-foreach($scores as $key => $score) {
-  echo $key . ' - ' . $score . PHP_EOL;
-};
+$scores = [
+  90,
+  40,
+  $moreScores,
+  100,
+];
+
+
+print_r($scores);
 
 /*
+//失敗、配列の中に更に配列が入ってしまう
+Array
+(
+    [0] => 90
+    [1] => 80
+    [2] => Array
+        (
+            [0] => 99
+            [1] => 77
+        )
 
-first - 90
-second  - 80
-third - 50
+    [3] => 50
+)
 
 */
