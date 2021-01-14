@@ -9,10 +9,11 @@ $moreScores = [
 
 $scores = [
   90,
-  80,
+  40,
   $moreScores,
-  50,
+  100,
 ];
+
 
 print_r($scores);
 
