@@ -1,35 +1,16 @@
 <?php
-//配列の中で配列を展開する
-//
+//初期化
 
-$moreScores = [
-  99,
-  77
-];
+// function sum($a, $b, $c)
+function sum(...$numbers)
+{
+  // return $a + $b + $c;
+  $total = 0;
+  foreach ($numbers as $number) {
+    $total += $number;
+  }
+  return $total;
+}
 
-$scores = [
-  90,
-  40,
-  $moreScores,
-  100,
-];
-
-
-print_r($scores);
-
-/*
-//失敗、配列の中に更に配列が入ってしまう
-Array
-(
-    [0] => 90
-    [1] => 80
-    [2] => Array
-        (
-            [0] => 99
-            [1] => 77
-        )
-
-    [3] => 50
-)
-
-*/
+echo sum(1, 3, 5) . PHP_EOL;
+echo sum(4, 2, 5, 1) . PHP_EOL;
