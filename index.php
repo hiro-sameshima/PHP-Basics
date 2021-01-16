@@ -10,6 +10,7 @@ function sum(...$numbers)
     $total += $number;
   }
   return $total;
+  
 }
 
 echo sum(1, 3, 5) . PHP_EOL;
