@@ -1,7 +1,7 @@
 <?php
-//初期化
-
+//可変長引数
 // function sum($a, $b, $c)
+//引数の数を追加しても計算される
 function sum(...$numbers)
 {
   // return $a + $b + $c;
