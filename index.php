@@ -1,16 +1,30 @@
 <?php
-//可変長引数
-// function sum($a, $b, $c)
-//引数の数を追加しても計算される
-function sum(...$numbers)
+//
+function getStats(...$numbers)
 {
-  // return $a + $b + $c;
   $total = 0;
   foreach ($numbers as $number) {
     $total += $number;
   }
-  return $total;
+  return [$total , $total / count($numbers)];//count()とは、配列の要素数を求める
 }
 
-echo sum(1, 3, 5) . PHP_EOL;
-echo sum(4, 2, 5, 1) . PHP_EOL;
+print_r(getStats(1,2,3,4,5));
+
+list($sum, $average) = getStats(1,2,3);
+[$sum, $average] = getStats(1,2,3);//listを使わない記述
+
+echo $sum . PHP_EOL;
+echo $average . PHP_EOL;
+
+/*
+Array
+(
+    [0] => 15 値の合計
+    [1] => 3　値の平均
+)
+
+6 //sumという変数に合計の値を代入
+2 //averageという変数に平均数を代入
+
+*/
