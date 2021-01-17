@@ -12,6 +12,7 @@ function getStats(...$numbers)
 print_r(getStats(1,2,3,4,5));
 
 list($sum, $average) = getStats(1,2,3);
+[$sum, $average] = getStats(1,2,3);//listを使わない記述
 
 echo $sum . PHP_EOL;
 echo $average . PHP_EOL;
